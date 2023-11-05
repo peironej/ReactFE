@@ -1,0 +1,7 @@
+.NavBarStyle {
+    background-color: #def4d4; /* Color de fondo */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
