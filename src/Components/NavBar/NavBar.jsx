@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import { CartWidget } from "../CartWidget/CartWidget"
 import styles from './NavBar.module.css';
 
@@ -6,11 +7,19 @@ export const NavBar = () => {
         <nav className={styles.NavBarStyle}>
             <img src="/img/farm.png" alt="" style={{ width: "90px" }} />
             <div>
-            <button className="btn btn-success mx-2">Home</button>
-            <button className="btn btn-success mx-2">Insumos</button>
-            <button className="btn btn-success mx-2">Contactos</button>
+            <NavLink to={"/"}>
+                <button className="btn btn-success mx-2">Home</button>
+            </NavLink>
+            <Link to={"/product"}>
+                <button className="btn btn-success mx-2">Productos</button>
+            </Link>
+            <NavLink to={"/contact"}>
+                <button className="btn btn-success mx-2">Contactos</button>
+            </NavLink>
             </div>
-            <CartWidget/>
+            <Link to={"/cart"}>
+                <CartWidget/>
+            </Link>
         </nav>
     )
 }

@@ -1,3 +1,12 @@
+export * from './Cart/Cart';
 export * from './CartWidget/CartWidget';
-export * from './ItemListContainer/ItemListContainer';
+export { default as Contacto } from './Contacto/Contacto';
+export * from './Home/Home';
 export * from './NavBar/NavBar';
+export * from './Product/Product';
+export * from './ProductDetail/ProductDetail';
+export * from './ProductDetailContainer/ProductDetailContainer';
+export * from './ProductList/ProductList';
+export { default as ProductCount } from './ProductListContainer/ProductCount/ProductCount';
+export * from './ProductListContainer/ProductListContainer';
+export * from './Promises/Promises';
