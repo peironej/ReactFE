@@ -14,7 +14,7 @@ export const NavBar = () => {
                 <button className="btn btn-success mx-2">Productos</button>
             </Link>
             <NavLink to={"/contact"}>
-                <button className="btn btn-success mx-2">Contactos</button>
+                <button className="btn btn-success mx-2">Contacto</button>
             </NavLink>
             </div>
             <Link to={"/cart"}>
